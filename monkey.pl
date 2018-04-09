@@ -1,4 +1,5 @@
 
+
 %accao para pegar a banana
 move(estado(centro,em_cima_caixa,centro,nao_possui_vara,nao_possui_banana),
 	  pegar_banana,
@@ -22,6 +23,7 @@ move(estado(P1,no_chao,B,Vara,H),
 move(estado(P1, no_chao,B,nao_possui_vara, nao_possui_banana),
 	  pegar_vara, 
 	 estado(P1, no_chao,B,possui_vara, nao_possui_banana)).
+
 
 
 conseguir(estado(_,_,_,possui_vara,possui)).
