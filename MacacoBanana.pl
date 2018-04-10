@@ -11,12 +11,6 @@ move(estado(P1,no_chao,P1,P1,possui_vara,nao_possui),
       estado(P2,no_chao,P2,P2,possui_vara,nao_possui)).
 
 
-move(estado(P1,no_chao,B,P3,nao_possui_vara,nao_possui),
-      caminhar(P1,P2),
-      estado(P2,no_chao,B,P3,possui_vara,nao_possui)).
-
-
-
 move(estado(P1,no_chao,B,P1,nao_possui_vara,nao_possui),
       pegar_vara,
       estado(P1,no_chao,B,P1,possui_vara,nao_possui)).
@@ -26,6 +20,10 @@ move(estado(P1,no_chao,B,P1,possui_vara,nao_possui),
       caminhar_com_vara(P1,P2),
       estado(P2,no_chao,B,P2,possui_vara,nao_possui)).
 
+
+move(estado(P1,no_chao,B,P3,nao_possui_vara,nao_possui),
+      caminhar(P1,P2),
+      estado(P2,no_chao,B,P3,nao_possui_vara,nao_possui)).
 
 consegue(estado(_,_,_,_,_,possui)):-!.
 consegue(Estado1):-
