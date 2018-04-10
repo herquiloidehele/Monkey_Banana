@@ -1,1 +1,2 @@
- format('~c~s~c~s', [0x1b, "[H", 0x1b, "[2J"])
+format('~c~s~c~s', [0x1b, "[H", 0x1b, "[2J"]). - for windows
+tty_clear - for macos.
