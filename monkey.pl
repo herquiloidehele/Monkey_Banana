@@ -27,3 +27,4 @@ move(estado(P1, no_chao,B,nao_possui_vara, nao_possui_banana),
 conseguir(estado(_,_,_,possui_vara,possui)).
 conseguir(Estado1) :- move(Estado1,_, Estado2) , conseguir(Estado2).
 
+
